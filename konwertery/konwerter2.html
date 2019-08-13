@@ -1,0 +1,33 @@
+<!-- dodanie roku i wytłuszczenie tytułów --><!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.1.0.min.js"></script>
+	<script>
+		// var x = $("#T").val();
+		 $(document).ready(function(){
+		 	$("input").click(function(){
+			 	var x = $("#T").val();
+			 	var y = x.split("</br></br>");
+			 	y.reverse();
+			 	var s = "";
+			 	for(var i=0; i<y.length; i++){
+			 		s+=y[i]+"</br></br>";
+			 	}
+			 	$("#O").val(s);
+			 });
+		 	alert("ok");	
+		});
+		
+	</script>
+</head>
+<body>
+<textarea id="T">
+	
+</textarea>
+<textarea id="O">
+	
+</textarea>
+<input type="button" id="B" />
+</body>
+</html>
